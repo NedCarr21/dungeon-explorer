@@ -115,3 +115,171 @@ Pokemon = CHARIZARD,63
     Item = SITRUSBERRY
 Pokemon = BLASTOISE,63
     Item = SITRUSBERRY
+	
+	
+	
+	
+	
+	
+	
+#-------------------------------
+[DUNGEON,Manager,1]
+LoseText = "Looks like you aren't strong enough just yet."
+Pokemon = FOONGUS,5
+	Item = ORANBERRY
+	Gender = Female
+	IV = 31,31,31,31,31,0
+Pokemon = CHARMANDER,5
+	Item = CHARCOAL
+	Gender = Male
+	IV = 31,31,31,31,31,31
+Pokemon = CHINCHOU,5
+	Item = MYSTICWATER
+	Gender = Female
+	IV = 31,31,31,31,31,31
+Pokemon = ZUBAT,5
+	Item = ORANBERRY
+	Gender = Female
+	IV = 31,31,31,31,31,31
+Pokemon = DEINO,5
+	Item = ORANBERRY
+	Gender = Male
+	IV = 31,31,31,31,31,31
+Pokemon = PORYGON,5
+	Item = SILKSCARF
+	Moves = CALMMIND,PSYBEAM,CONVERSION,THUNDERWAVE
+	IV = 31,31,31,31,31,31
+#-------------------------------
+[DUNGEON,Manager,2]
+LoseText = "Looks like you aren't strong enough just yet."
+Pokemon = FOONGUS,5
+	Item = SITRUSBERRY
+	Gender = Female
+	IV = 31,31,31,31,31,0
+Pokemon = CHARMELEON,5
+	Item = CHARCOAL
+	Gender = Male
+	IV = 31,31,31,31,31,31
+Pokemon = CHINCHOU,5
+	Item = MYSTICWATER
+	Gender = Female
+	IV = 31,31,31,31,31,31
+Pokemon = GOLBAT,5
+	Item = SITRUSBERRY
+	Gender = Female
+	IV = 31,31,31,31,31,31
+Pokemon = DEINO,5
+	Item = DRAGONGEM
+	Moves = TACKLE,BITE,DRAGONRAGE,DRAGONBREATH
+	Gender = Male
+	IV = 31,31,31,31,31,31
+Pokemon = PORYGON,5
+	Item = SILKSCARF
+	Moves = CALMMIND,PSYBEAM,CONVERSION,THUNDERWAVE
+	IV = 31,31,31,31,31,31
+#-------------------------------
+[DUNGEON,Manager,3]
+LoseText = "Looks like you aren't strong enough just yet."
+Pokemon = FOONGUS,5
+	Item = LEFTOVERS
+	Gender = Female
+	IV = 31,31,31,31,31,0
+Pokemon = CHARIZARD,5
+	Item = CHARCOAL
+	Gender = Male
+	IV = 31,31,31,31,31,31
+Pokemon = LANTURN,5
+	Item = MYSTICWATER
+	Gender = Female
+	IV = 31,31,31,31,31,31
+Pokemon = GOLBAT,5
+	Item = POISONBARB
+	Gender = Female
+	IV = 31,31,31,31,31,31
+Pokemon = DEINO,5
+	Item = YACHEBERRY
+	Moves = HEADBUTT,CRUNCH,DRAGONRAGE,DRAGONPULSE
+	Gender = Male
+	IV = 31,31,31,31,31,31
+Pokemon = PORYGON2,5
+	Item = SILKSCARF
+	Moves = ICEBEAM,CALMMIND,PSYBEAM,CONVERSION
+	IV = 31,31,31,31,31,31
+#-------------------------------
+[DUNGEON,Manager,4]
+LoseText = "Looks like you aren't strong enough just yet."
+Pokemon = AMOONGUSS,5
+	Item = LEFTOVERS
+	Moves = PROTECT,SYNTHESIS,LEECHLIFE,GIGADRAIN
+	Gender = Female
+	IV = 31,31,31,31,31,0
+Pokemon = CHARIZARD,5
+	Item = LIFEORB
+	Moves = FIREBLAST,AIRSLASH,DRAGONPULSE,FOCUSBLAST
+	Ability = 1
+	Gender = Male
+	Nature = TIMID
+	IV = 31,31,31,31,31,31
+	EV = 0,0,4,252,252,0
+Pokemon = LANTURN,5
+	Item = LEFTOVERS
+	Moves = VOLTSWITCH,SCALD,TOXIC,PROTECT
+	Ability = 0
+	Gender = Female
+	Nature = CALM
+	IV = 31,31,31,31,31,31
+	EV = 52,0,160,80,20,196
+Pokemon = CROBAT,5
+	Item = ASSAULTVEST
+	Moves = AIRSLASH,LEECHLIFE,CROSSPOISON,FLY
+	Gender = Female
+	IV = 31,31,31,31,31,31
+Pokemon = ZWEILOUS,5
+	Item = YACHEBERRY
+	Moves = HEADBUTT,CRUNCH,DRAGONRAGE,DRAGONPULSE
+	Gender = Male
+	IV = 31,31,31,31,31,31
+Pokemon = PORYGONZ,5
+	Item = SILKSCARF
+	Moves = ICEBEAM,CALMMIND,PSYCHIC,HYPERBEAM
+	IV = 31,31,31,31,31,31
+#-------------------------------
+[DUNGEON,Manager,5]
+LoseText = "Looks like you aren't strong enough just yet."
+Pokemon = AMOONGUSS,5
+	Item = LEFTOVERS
+	Moves = PROTECT,SYNTHESIS,LEECHLIFE,GIGADRAIN
+	Gender = Female
+	IV = 31,31,31,31,31,0
+Pokemon = CHARIZARD,5
+	Item = LIFEORB
+	Moves = FIREBLAST,AIRSLASH,DRAGONPULSE,FOCUSBLAST
+	Ability = 1
+	Gender = Male
+	Nature = TIMID
+	IV = 31,31,31,31,31,31
+	EV = 0,0,4,252,252,0
+Pokemon = LANTURN,5
+	Item = LEFTOVERS
+	Moves = VOLTSWITCH,SCALD,TOXIC,PROTECT
+	Ability = 0
+	Gender = Female
+	Nature = CALM
+	IV = 31,31,31,31,31,31
+	EV = 52,0,160,80,20,196
+Pokemon = CROBAT,5
+	Item = ASSAULTVEST
+	Moves = AIRSLASH,LEECHLIFE,CROSSPOISON,FLY
+	Gender = Female
+	IV = 31,31,31,31,31,31
+Pokemon = HYDREIGON,5
+	Item = YACHEBERRY
+	Moves = THUNDERBOLT,CRUNCH,SURF,DRAGONPULSE
+	Gender = Male
+	IV = 31,31,31,31,31,31
+Pokemon = PORYGONZ,5
+	Item = SILKSCARF
+	Moves = ICEBEAM,CALMMIND,PSYCHIC,HYPERBEAM
+	IV = 31,31,31,31,31,31	
+	
+	
