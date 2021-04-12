@@ -1,0 +1,16 @@
+# Audio and Graphics folders
+# Audio/
+# Graphics/
+# Data/
+# Data/Scripts/
+
+# Files in the main project folder
+#Game.ini
+#Game.rxproj
+#RGSS*.dll
+
+# Temp files
+
+~*
+# Word files
+*.docx

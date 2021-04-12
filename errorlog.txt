@@ -1,0 +1,95 @@
+
+=================
+
+[Sun Apr 04 23:51:23 -0500 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: NoMethodError
+Message: undefined method `name' for nil:NilClass
+
+Backtrace:
+002_PField_Field.rb:543:in `load_scripts_from_folder'
+003_Event_Handlers.rb:51:in `call'
+003_Event_Handlers.rb:51:in `trigger'
+003_Event_Handlers.rb:46:in `each'
+003_Event_Handlers.rb:46:in `trigger'
+011_MapFactory.rb:147:in `setMapChanging'
+011_MapFactory.rb:22:in `setup'
+013_PScreen_Load.rb:371:in `pbStartLoadScreen'
+013_PScreen_Load.rb:340:in `open'
+013_PScreen_Load.rb:340:in `pbStartLoadScreen'
+
+=================
+
+[Thu Apr 08 13:36:55 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: NoMethodError
+Message: undefined method `*' for nil:NilClass
+
+Backtrace:
+001_Tilemap_XP.rb:417:in `addTile'
+001_Tilemap_XP.rb:849:in `refresh'
+001_Tilemap_XP.rb:846:in `each'
+001_Tilemap_XP.rb:846:in `refresh'
+001_Tilemap_XP.rb:945:in `update'
+004_TilemapLoader.rb:53:in `update'
+006_Spriteset_Map.rb:130:in `_animationSprite_update'
+008_Sprite_AnimationSprite.rb:89:in `update'
+002_Scene_Map.rb:149:in `updateSpritesets'
+002_Scene_Map.rb:143:in `each'
+
+=================
+
+[Thu Apr 08 13:37:38 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: NoMethodError
+Message: undefined method `*' for nil:NilClass
+
+Backtrace:
+001_Tilemap_XP.rb:417:in `addTile'
+001_Tilemap_XP.rb:849:in `refresh'
+001_Tilemap_XP.rb:846:in `each'
+001_Tilemap_XP.rb:846:in `refresh'
+001_Tilemap_XP.rb:945:in `update'
+004_TilemapLoader.rb:53:in `update'
+006_Spriteset_Map.rb:130:in `_animationSprite_update'
+008_Sprite_AnimationSprite.rb:89:in `update'
+006_Spriteset_Map.rb:68:in `_animationSprite_initialize'
+008_Sprite_AnimationSprite.rb:50:in `shadow_initialize'
+
+=================
+
+[Thu Apr 08 13:38:25 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: NoMethodError
+Message: undefined method `*' for nil:NilClass
+
+Backtrace:
+001_Tilemap_XP.rb:417:in `addTile'
+001_Tilemap_XP.rb:849:in `refresh'
+001_Tilemap_XP.rb:846:in `each'
+001_Tilemap_XP.rb:846:in `refresh'
+001_Tilemap_XP.rb:945:in `update'
+004_TilemapLoader.rb:53:in `update'
+006_Spriteset_Map.rb:130:in `_animationSprite_update'
+008_Sprite_AnimationSprite.rb:89:in `update'
+002_Scene_Map.rb:149:in `updateSpritesets'
+002_Scene_Map.rb:143:in `each'
+
+=================
+
+[Thu Apr 08 13:44:51 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: NoMethodError
+Message: undefined method `*' for nil:NilClass
+
+Backtrace:
+001_Tilemap_XP.rb:417:in `addTile'
+001_Tilemap_XP.rb:849:in `refresh'
+001_Tilemap_XP.rb:846:in `each'
+001_Tilemap_XP.rb:846:in `refresh'
+001_Tilemap_XP.rb:945:in `update'
+004_TilemapLoader.rb:53:in `update'
+006_Spriteset_Map.rb:130:in `_animationSprite_update'
+008_Sprite_AnimationSprite.rb:89:in `update'
+002_Scene_Map.rb:149:in `updateSpritesets'
+002_Scene_Map.rb:143:in `each'
