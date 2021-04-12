@@ -30,10 +30,10 @@ MAP_VIEW_MODE      = 1
 # * The odds of a newly generated Pokémon being shiny (out of 65536).
 # * The odds of a wild Pokémon/bred egg having Pokérus (out of 65536).
 #===============================================================================
-MAXIMUM_LEVEL        = 100
+MAXIMUM_LEVEL        = 999
 EGG_LEVEL            = 1
-SHINY_POKEMON_CHANCE = 8
-POKERUS_CHANCE       = 3
+SHINY_POKEMON_CHANCE = 80
+POKERUS_CHANCE       = 8
 
 #===============================================================================
 # * Whether outdoor maps should be shaded according to the time of day.
@@ -83,10 +83,10 @@ NO_SIGNPOSTS = []
 # * The maximum number of Game Corner coins the player can have.
 # * The maximum length, in characters, that the player's name can be.
 #===============================================================================
-INITIAL_MONEY        = 3000
-MAX_MONEY            = 999_999
-MAX_COINS            = 99_999
-MAX_PLAYER_NAME_SIZE = 10
+INITIAL_MONEY        = 0
+MAX_MONEY            = 1_000_000_000
+MAX_COINS            = 100_000
+MAX_PLAYER_NAME_SIZE = 12
 
 #===============================================================================
 # * A set of arrays each containing a trainer type followed by a Global Variable
@@ -112,18 +112,18 @@ RIVAL_NAMES = [
 #      e.g. To require the second badge, put false and 1.
 #           To require at least 2 badges, put true and 2.
 #===============================================================================
-NUM_BADGES_BOOST_ATTACK  = 1
-NUM_BADGES_BOOST_DEFENSE = 5
-NUM_BADGES_BOOST_SPATK   = 7
-NUM_BADGES_BOOST_SPDEF   = 7
-NUM_BADGES_BOOST_SPEED   = 3
+NUM_BADGES_BOOST_ATTACK  = 0
+NUM_BADGES_BOOST_DEFENSE = 0
+NUM_BADGES_BOOST_SPATK   = 0
+NUM_BADGES_BOOST_SPDEF   = 0
+NUM_BADGES_BOOST_SPEED   = 0
 FIELD_MOVES_COUNT_BADGES = true
-BADGE_FOR_CUT            = 1
-BADGE_FOR_FLASH          = 2
-BADGE_FOR_ROCKSMASH      = 3
-BADGE_FOR_SURF           = 4
+BADGE_FOR_CUT            = 0
+BADGE_FOR_FLASH          = 0
+BADGE_FOR_ROCKSMASH      = 0
+BADGE_FOR_SURF           = 0
 BADGE_FOR_FLY            = 5
-BADGE_FOR_STRENGTH       = 6
+BADGE_FOR_STRENGTH       = 0
 BADGE_FOR_DIVE           = 7
 BADGE_FOR_WATERFALL      = 8
 
@@ -151,8 +151,8 @@ MOVE_CATEGORY_PER_MOVE    = true
 NEWEST_BATTLE_MECHANICS   = true
 DYNAMIC_PRIORITY          = true
 SCALED_EXP_FORMULA        = true
-SPLIT_EXP_BETWEEN_GAINERS = false
-ENABLE_CRITICAL_CAPTURES  = false
+SPLIT_EXP_BETWEEN_GAINERS = true
+ENABLE_CRITICAL_CAPTURES  = true
 GAIN_EXP_FOR_CAPTURE      = true
 MEGA_RINGS                = [:MEGARING, :MEGABRACELET, :MEGACUFF, :MEGACHARM, :KEYSTONE]
 
@@ -169,14 +169,14 @@ def pbPocketNames; return ["",
   _INTL("Medicine"),
   _INTL("Poké Balls"),
   _INTL("TMs & HMs"),
-  _INTL("Berries"),
-  _INTL("Mail"),
+  _INTL("Collectibles"),
+  _INTL("Treasures"),
   _INTL("Battle Items"),
   _INTL("Key Items")
 ]; end
 BAG_MAX_POCKET_SIZE  = [0, -1, -1, -1, -1, -1, -1, -1, -1]
-BAG_MAX_PER_SLOT     = 999
-BAG_POCKET_AUTO_SORT = [0, false, false, false, true, true, false, false, false]
+BAG_MAX_PER_SLOT     = 9999
+BAG_POCKET_AUTO_SORT = [0, true, true, true, true, true, true, true, true]
 
 #===============================================================================
 # * A set of arrays each containing details of a graphic to be shown on the
@@ -198,9 +198,9 @@ REGION_MAP_EXTRAS = [
 # * The number of boxes in Pokémon storage.
 #===============================================================================
 def pbStorageCreator
-  return _INTL("Bill")
+  return _INTL("Not Bill")
 end
-NUM_STORAGE_BOXES = 30
+NUM_STORAGE_BOXES = 16
 
 #===============================================================================
 # * Whether the Pokédex list shown is the one for the player's current region
@@ -228,8 +228,7 @@ NUM_STORAGE_BOXES = 30
 #===============================================================================
 USE_CURRENT_REGION_DEX = false
 def pbDexNames; return [
-  [_INTL("Kanto Pokédex"), 0],
-  [_INTL("Johto Pokédex"), 1],
+  [_INTL("Dungeon Pokédex"), 0],
   _INTL("National Pokédex")
 ]; end
 DEX_SHOWS_ALL_FORMS = false
