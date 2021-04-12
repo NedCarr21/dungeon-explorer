@@ -93,3 +93,111 @@ Backtrace:
 008_Sprite_AnimationSprite.rb:89:in `update'
 002_Scene_Map.rb:149:in `updateSpritesets'
 002_Scene_Map.rb:143:in `each'
+
+=================
+
+[Mon Apr 12 12:29:49 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Script error within event 4 (coords 32,15), map 22 ():
+Exception: ArgumentError
+Message: 008_PItem_Bag.rb:93:in `pbQuantity': Item number 0 is invalid.
+
+***Full script:
+tokentrade
+
+
+Backtrace:
+001_Interpreter.rb:197:in `pbExecuteScript'
+013_Lootbox.rb:53:in `tokentrade'
+(eval):1:in `pbExecuteScript'
+001_Interpreter.rb:1458:in `eval'
+001_Interpreter.rb:197:in `pbExecuteScript'
+001_Interpreter.rb:1458:in `command_355'
+001_Interpreter.rb:359:in `execute_command'
+001_Interpreter.rb:155:in `update'
+001_Interpreter.rb:102:in `loop'
+001_Interpreter.rb:102:in `update'
+
+
+Backtrace:
+001_Interpreter.rb:246:in `pbExecuteScript'
+001_Interpreter.rb:1458:in `command_355'
+001_Interpreter.rb:359:in `execute_command'
+001_Interpreter.rb:155:in `update'
+001_Interpreter.rb:102:in `loop'
+001_Interpreter.rb:102:in `update'
+002_Scene_Map.rb:162:in `follow_update'
+002_Scene_Map.rb:160:in `loop'
+002_Scene_Map.rb:160:in `follow_update'
+001_Follower_Main.rb:1325:in `updateold'
+
+=================
+
+[Mon Apr 12 12:30:30 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Undefined value DUNGEON in PBTrainers
+File PBS/trainers.txt, line 126
+[DUNGEON,Manager,1]
+
+
+
+
+Backtrace:
+001_Compiler.rb:423:in `checkEnumField'
+001_Compiler.rb:410:in `csvEnumField!'
+001_Compiler.rb:593:in `pbGetCsvRecord'
+001_Compiler.rb:485:in `each'
+001_Compiler.rb:485:in `pbGetCsvRecord'
+002_Compiler_PBS.rb:1406:in `pbCompileTrainers'
+001_Compiler.rb:275:in `pbCompilerEachCommentedLine'
+001_Compiler.rb:269:in `each_line'
+001_Compiler.rb:269:in `pbCompilerEachCommentedLine'
+001_Compiler.rb:266:in `open'
+
+=================
+
+[Mon Apr 12 12:32:10 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Undefined value CHILLINGNEIGH in PBAbilities
+File PBS/pokemon.txt, section 896, key Abilities
+CHILLINGNEIGH
+
+
+
+Backtrace:
+001_Compiler.rb:433:in `checkEnumField'
+001_Compiler.rb:410:in `csvEnumField!'
+001_Compiler.rb:593:in `pbGetCsvRecord'
+001_Compiler.rb:485:in `each'
+001_Compiler.rb:485:in `pbGetCsvRecord'
+002_Compiler_PBS.rb:748:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:735:in `each'
+002_Compiler_PBS.rb:735:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:734:in `each'
+002_Compiler_PBS.rb:734:in `pbCompilePokemonData'
+
+=================
+
+[Mon Apr 12 12:32:48 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Undefined value TRANSISTOR in PBAbilities
+File PBS/pokemon.txt, section 894, key Abilities
+TRANSISTOR
+
+
+
+Backtrace:
+001_Compiler.rb:433:in `checkEnumField'
+001_Compiler.rb:410:in `csvEnumField!'
+001_Compiler.rb:593:in `pbGetCsvRecord'
+001_Compiler.rb:485:in `each'
+001_Compiler.rb:485:in `pbGetCsvRecord'
+002_Compiler_PBS.rb:748:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:735:in `each'
+002_Compiler_PBS.rb:735:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:734:in `each'
+002_Compiler_PBS.rb:734:in `pbCompilePokemonData'
