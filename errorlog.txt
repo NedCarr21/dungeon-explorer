@@ -201,3 +201,203 @@ Backtrace:
 002_Compiler_PBS.rb:735:in `pbCompilePokemonData'
 002_Compiler_PBS.rb:734:in `each'
 002_Compiler_PBS.rb:734:in `pbCompilePokemonData'
+
+=================
+
+[Mon Apr 12 16:28:00 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: Errno::ENOENT
+Message: File Data/trainer_types.dat not found.
+
+Backtrace:
+000_MKXP Compatibility.rb:42:in `initialize'
+000_MKXP Compatibility.rb:42:in `open'
+000_MKXP Compatibility.rb:42:in `load_data'
+001_Data_Cache.rb:241:in `pbLoadTrainerTypesData'
+001_Data_Cache.rb:247:in `pbGetTrainerTypeData'
+001_PokeBattle_Trainer.rb:100:in `gender'
+001_PokeBattle_Trainer.rb:105:in `male?'
+013_PScreen_Load.rb:75:in `refresh'
+013_PScreen_Load.rb:23:in `initialize'
+013_PScreen_Load.rb:105:in `new'
+
+=================
+
+[Mon Apr 12 17:11:55 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Undefined value STICK in PBItems
+File PBS/pokemon.txt, section 83, key WildItemUncommon
+STICK
+
+
+
+Backtrace:
+001_Compiler.rb:433:in `checkEnumField'
+001_Compiler.rb:410:in `csvEnumField!'
+001_Compiler.rb:593:in `pbGetCsvRecord'
+001_Compiler.rb:485:in `each'
+001_Compiler.rb:485:in `pbGetCsvRecord'
+002_Compiler_PBS.rb:748:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:735:in `each'
+002_Compiler_PBS.rb:735:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:734:in `each'
+002_Compiler_PBS.rb:734:in `pbCompilePokemonData'
+
+=================
+
+[Mon Apr 12 17:12:33 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Undefined value VICEGRIP in PBMoves
+File PBS/pokemon.txt, section 98, key Moves
+1,MUDSPORT,1,BUBBLE,5,VICEGRIP,9,LEER,11,HARDEN,15,BUBBLEBEAM,19,MUDSHOT,21,METALCLAW,25,STOMP,29,PROTECT,31,GUILLOTINE,35,SLAM,39,BRINE,41,CRABHAMMER,45,FLAIL
+
+
+
+Backtrace:
+001_Compiler.rb:433:in `checkEnumField'
+001_Compiler.rb:410:in `csvEnumField!'
+001_Compiler.rb:593:in `pbGetCsvRecord'
+001_Compiler.rb:485:in `each'
+001_Compiler.rb:485:in `pbGetCsvRecord'
+002_Compiler_PBS.rb:748:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:735:in `each'
+002_Compiler_PBS.rb:735:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:734:in `each'
+002_Compiler_PBS.rb:734:in `pbCompilePokemonData'
+
+=================
+
+[Mon Apr 12 17:13:35 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Undefined move constant name: BODYPRESS
+Name must consist only of letters, numbers, and
+underscores and can't begin with a number.
+Make sure the name is defined in
+PBS/moves.txt.
+File PBS/items.txt, line 815
+791,TR99,TR99,TR99s,4,6000,"The user attacks by slamming its body into the target. The higher the user's Defense, the more damage it inflicts.",6,0,0,BODYPRESS,
+
+
+
+
+Backtrace:
+001_Compiler.rb:810:in `pbGetConst'
+001_Compiler.rb:865:in `parseMove'
+002_Compiler_PBS.rb:570:in `pbCompileItems'
+001_Compiler.rb:275:in `pbCompilerEachCommentedLine'
+001_Compiler.rb:269:in `each_line'
+001_Compiler.rb:269:in `pbCompilerEachCommentedLine'
+001_Compiler.rb:266:in `open'
+001_Compiler.rb:266:in `pbCompilerEachCommentedLine'
+002_Compiler_PBS.rb:548:in `pbCompileItems'
+001_Compiler.rb:1149:in `pbCompileAllData'
+
+=================
+
+[Mon Apr 12 17:15:13 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Undefined value VICEGRIP in PBMoves
+File PBS/pokemon.txt, section 98, key Moves
+1,MUDSPORT,1,BUBBLE,5,VICEGRIP,9,LEER,11,HARDEN,15,BUBBLEBEAM,19,MUDSHOT,21,METALCLAW,25,STOMP,29,PROTECT,31,GUILLOTINE,35,SLAM,39,BRINE,41,CRABHAMMER,45,FLAIL
+
+
+
+Backtrace:
+001_Compiler.rb:433:in `checkEnumField'
+001_Compiler.rb:410:in `csvEnumField!'
+001_Compiler.rb:593:in `pbGetCsvRecord'
+001_Compiler.rb:485:in `each'
+001_Compiler.rb:485:in `pbGetCsvRecord'
+002_Compiler_PBS.rb:748:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:735:in `each'
+002_Compiler_PBS.rb:735:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:734:in `each'
+002_Compiler_PBS.rb:734:in `pbCompilePokemonData'
+
+=================
+
+[Mon Apr 12 17:16:07 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Undefined value PRETTYWING in PBItems
+File PBS/pokemon.txt, section 278, key WildItemCommon
+PRETTYWING
+
+
+
+Backtrace:
+001_Compiler.rb:433:in `checkEnumField'
+001_Compiler.rb:410:in `csvEnumField!'
+001_Compiler.rb:593:in `pbGetCsvRecord'
+001_Compiler.rb:485:in `each'
+001_Compiler.rb:485:in `pbGetCsvRecord'
+002_Compiler_PBS.rb:748:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:735:in `each'
+002_Compiler_PBS.rb:735:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:734:in `each'
+002_Compiler_PBS.rb:734:in `pbCompilePokemonData'
+
+=================
+
+[Mon Apr 12 17:42:56 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Undefined value STICK in PBItems
+File PBS/pokemon.txt, section 865, key WildItemUncommon
+STICK
+
+
+
+Backtrace:
+001_Compiler.rb:433:in `checkEnumField'
+001_Compiler.rb:410:in `csvEnumField!'
+001_Compiler.rb:593:in `pbGetCsvRecord'
+001_Compiler.rb:485:in `each'
+001_Compiler.rb:485:in `pbGetCsvRecord'
+002_Compiler_PBS.rb:748:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:735:in `each'
+002_Compiler_PBS.rb:735:in `pbCompilePokemonData'
+002_Compiler_PBS.rb:734:in `each'
+002_Compiler_PBS.rb:734:in `pbCompilePokemonData'
+
+=================
+
+[Tue Apr 13 01:20:45 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Event's graphic is an out-of-range tile (event 16, map 97)
+
+Backtrace:
+005_Game_Character.rb:250:in `screen_z'
+003_Sprite_Character.rb:160:in `shadow_update'
+009_Sprite_DynamicShadows.rb:157:in `update_or'
+002_Tilemap_Perspective.rb:434:in `follow_update'
+001_Follower_Main.rb:1005:in `sh_update'
+001_MKXP Shadow.rb:111:in `update'
+003_Sprite_Character.rb:72:in `shadow_initialize'
+009_Sprite_DynamicShadows.rb:134:in `perspectivetilemap_initialize'
+002_Tilemap_Perspective.rb:428:in `follow_init'
+001_Follower_Main.rb:969:in `sh_init'
+
+=================
+
+[Tue Apr 13 01:22:21 -0700 2021]
+[Pokémon Essentials version 18.1.dev]
+Exception: RuntimeError
+Message: Event's graphic is an out-of-range tile (event 16, map 97)
+
+Backtrace:
+005_Game_Character.rb:250:in `screen_z'
+003_Sprite_Character.rb:160:in `shadow_update'
+009_Sprite_DynamicShadows.rb:157:in `update_or'
+002_Tilemap_Perspective.rb:434:in `follow_update'
+001_Follower_Main.rb:1005:in `sh_update'
+001_MKXP Shadow.rb:111:in `update'
+003_Sprite_Character.rb:72:in `shadow_initialize'
+009_Sprite_DynamicShadows.rb:134:in `perspectivetilemap_initialize'
+002_Tilemap_Perspective.rb:428:in `follow_init'
+001_Follower_Main.rb:969:in `sh_init'

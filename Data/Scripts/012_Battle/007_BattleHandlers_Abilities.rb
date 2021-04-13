@@ -923,7 +923,7 @@ BattleHandlers::DamageCalcUserAbility.add(:BLAZE,
 
 BattleHandlers::DamageCalcUserAbility.add(:DEFEATIST,
   proc { |ability,user,target,move,mults,baseDmg,type|
-    mults[ATK_MULT] /= 2 if user.hp<=user.totalhp/2
+    mults[ATK_MULT] /= 2 if user.hp<=user.totalhp/4
   }
 )
 

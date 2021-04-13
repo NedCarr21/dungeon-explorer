@@ -78,17 +78,21 @@ $isUnlocked = []
 =end
 
 RECIPES=[
-[:TM01,1,[:PURPLEGEM,3],nil, true],
-[:TM02,1,[:REDGEM,2],[:BLUEGEM,1], true],
-[:TM03,1,[:PURPLEGEM,2],nil, true],
-[:TM04,1,[:YELLOWGEM,2],[:PURPLEGEM,1], true],
-[:TM05,1,[:GREENGEM,1],nil, true],
-[:TM06,1,[:BLUEGEM,1],[:PURPLEGEM,1], true],
-[:TM07,1,[:BLUEGEM,1],nil, true],
-[:TM08,1,[:REDGEM,2],[:YELLOWGEM,1], true],
-[:TM09,1,[:REDGEM,2],[:PURPLEGEM,1], true],
+[:TM00,1,[:GREENGEM,5],nil, true],
+[:TM01,1,[:GREENGEM,5],nil, true],
+[:TM02,1,[:WARMGEM,3],[:BLUEGEM,2], true],
+[:TM03,1,[:FIREGEM,3],nil, true],
+[:TM04,1,[:BLUEGEM,3],nil, true],
+[:TM05,1,[:YELLOWGEM,3],nil, true],
+[:TM06,1,[:GREENGEM,2],[:PURPLEGEM,1], true],
+[:TM07,1,[:GREENGEM,3],nil, true],
+[:TM08,1,[:RAINBOWGEM,1],[:YELLOWGEM,1], true],
+[:TM09,1,[:RAINBOWGEM,1],[:GREENGEM,1], true],
 [:TM10,1,[:GREENGEM,2],nil, true],
-[:TM11,1,[:REDGEM,2],nil, true],
+[:TM11,1,[:COLDGEM,1],[:GREENGEM,2], true],
+[:TM12,1,[:WARMGEM,1],[:GREENGEM,2], true],
+[:TM13,1,[:REDGEM,3],nil, true],
+[:TM14,1,[:YELLOWGEM,1],[:ORANGEGEM,1], true],
 ]
 
 ###############################################################################

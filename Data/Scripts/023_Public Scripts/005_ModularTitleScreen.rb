@@ -19,7 +19,8 @@ if defined?(PluginManager)
     :dependencies => [
       ["Luka's Scripting Utilities", "3.0"]
     ],
-    :credits => ["Luka S.J."]
+    :credits => ["Luka S.J."],
+    :incompatibilities => "DP Pause Menu"
   })
 else
   raise "This script is only compatible with Essentials v18.x!"
