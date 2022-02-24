@@ -1,0 +1,3 @@
+Name         = Ned's Custom Scripts
+Version      = 1.0
+Credits      = Ned
