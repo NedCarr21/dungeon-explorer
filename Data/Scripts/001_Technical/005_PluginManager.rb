@@ -260,7 +260,7 @@ module PluginManager
               dep_version = dep[2]
               optional    = false
               exact       = false
-              case def_arg
+              case dep_arg
               when :optional
                 optional = true
               when :exact
@@ -351,7 +351,7 @@ module PluginManager
     Graphics.update
     t = Thread.new do
       echoln "Plugin Error:\r\n#{msg}"
-      p "Plugin Error: #{msg}"
+      print("Plugin Error: #{msg}")
       Thread.exit
     end
     while t.status
@@ -576,11 +576,17 @@ module PluginManager
       next if !plugins[o] || !plugins[o][:dependencies]
       # go through all dependencies
       for dname in plugins[o][:dependencies]
+        optional = false
         # clean the name to a simple string
-        dname = dname[0] if dname.is_a?(Array) && dname.length == 2
-        dname = dname[1] if dname.is_a?(Array) && dname.length == 3
+        if dname.is_a?(Array)
+          optional = [:optional,:optional_exact].include?(dname[0])
+          dname = dname[dname.length - 2]
+        end
         # catch missing dependency
-        self.error("Plugin '#{o}' requires plugin '#{dname}' to work properly.") if !order.include?(dname)
+        if !order.include?(dname)
+          next if optional
+          self.error("Plugin '#{o}' requires plugin '#{dname}' to work properly.")
+        end
         # skip if already sorted
         next if order.index(dname) > order.index(o)
         # catch looping dependency issue
@@ -696,7 +702,7 @@ module PluginManager
         fname = "[#{name}] #{sname}"
         # try to run the code
         begin
-          eval(code, TOPLEVEL_BINDING, fname)
+          eval(code, TOPLEVEL_BINDING, fname) if name != "v19.1 Hotfixes" || compare_versions(meta[:version], "1.0.7") > 0
           echoln "Loaded plugin: #{name}" if !echoed_plugins.include?(name)
           echoed_plugins.push(name)
         rescue Exception   # format error message to display

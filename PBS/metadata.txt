@@ -10,6 +10,7 @@ SurfBGM = Surfing.mid
 BicycleBGM = Bicycle.mid
 PlayerA = POKEMONTRAINER_Red,trainer_POKEMONTRAINER_Red,boy_bike,boy_surf,boy_run,boy_surf,boy_fish_offset,boy_fish_offset
 PlayerB = POKEMONTRAINER_Leaf,trainer_POKEMONTRAINER_Leaf,girl_bike,girl_surf,girl_run,girl_surf,girl_fish_offset,girl_fish_offset
+PlayerC = CINEMTAIC_Character,CINEMTAIC_Character,CINEMTAIC_Character,CINEMTAIC_Character,CINEMTAIC_Character,CINEMTAIC_Character,CINEMTAIC_Character,CINEMTAIC_Character
 #-------------------------------
 [001]
 # Intro

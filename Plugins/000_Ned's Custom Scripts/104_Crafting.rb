@@ -34,15 +34,15 @@ def tmcrafting
           @cost2=RECIPES[@item][3]? RECIPES[@item][3][1] : 0 # the amount for first item
           @amount=RECIPES[@item][1] # the amount for the first item made
 
-          if $PokemonBag.pbQuantity(@mat1)<@cost1 || (@mat2!=-1 && $PokemonBag.pbQuantity(@mat2) <@cost2)
-              Kernel.pbMessage(_INTL("Unable to craft item, you do not meet the required materials"))
+          if $PokemonBag.pbQuantity(@mat1) < @cost1 || (@mat2!=-1 && $PokemonBag.pbQuantity(@mat2) < @cost2)
+              pbMessage(_INTL("Unable to craft item, you do not meet the required materials"))
             else
               $PokemonBag.pbStoreItem(RECIPES[@item][0],@amount)
               $PokemonBag.pbDeleteItem(@mat1,@cost1)
               if @mat2!=-1
                 $PokemonBag.pbDeleteItem(@mat2,@cost2)
               end
-              Kernel.pbMessage(_INTL("{1} {2}'s were crafted", @amount, PBItems.getName(getID(PBItems,RECIPES[@item][0]))))
+              pbMessage(_INTL("{1} {2}'s were crafted", @amount, PBItems.getName(getID(PBItems,RECIPES[@item][0]))))
          end
        end
    else

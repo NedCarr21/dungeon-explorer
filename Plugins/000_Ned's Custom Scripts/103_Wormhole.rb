@@ -1,11 +1,11 @@
 def randomwormhole
-  $game_switches[97] = true
+  $game_switches[97] = true # Level Scaling
 
-  $game_variables[97] = rand(12) + 1
+  $game_variables[97] = rand(12) + 1 # Wormhole Shiny Chance (1/12)
   if $game_variables[97] == 1
-    $game_switches[31] = true
+    $game_switches[31] = true # Shiny Switch
   else
-    $game_switches[31] = false
+    $game_switches[31] = false # Shiny Switch
   end
 
   case rand(32)
@@ -40,22 +40,21 @@ def randomwormhole
     when 28; pbWildBattle(:SPIRITOMB,5)
     when 29; pbWildBattle(:GOOMY,5)
     when 30; pbWildBattle(:DREEPY,5)
-    when 31; Kernel.pbMessage(_INTL("There is no prescence eminating from the wormhole."))
+    when 31; pbMessage(_INTL("There is no prescence eminating from the wormhole."))
     end
   pbWait(5)
   $game_variables[97] = 0
-  $game_switches[97] = false
-  $game_switches[31] = false
-  $game_switches[31] = false
+  $game_switches[97] = false # Level Scaling
+  $game_switches[31] = false # Shiny Switch
 end
 
 def wormholeEncounter
-  case rand(39) #90 each is 1/90 (1.111%) random is 4/90 (4.444%)
+  case rand(39) # 90 each is 1/90 (1.111%) random is 4/90 (4.444%)
   when 0;
     if ($Trainer.hasOwned?(:ARTICUNO))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("An icy bird emerged."))
+      pbMessage(_INTL("An icy bird emerged."))
       pbWait(5)
       pbWildBattle(:ARTICUNO,70)
     end
@@ -64,7 +63,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:ZAPDOS))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("An electrical bird emerged."))
+      pbMessage(_INTL("An electrical bird emerged."))
       pbWait(5)
       pbWildBattle(:ZAPDOS,70)
     end
@@ -73,7 +72,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:MOLTRES))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A fiery bird emerged."))
+      pbMessage(_INTL("A fiery bird emerged."))
       pbWait(5)
       pbWildBattle(:MOLTRES,70)
     end
@@ -82,7 +81,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:MEWTWO))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A mew? emerged."))
+      pbMessage(_INTL("A mew? emerged."))
       pbWait(5)
       pbWildBattle(:MEWTWO,70)
     end
@@ -91,7 +90,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:MEW))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A mythical psychic emerged."))
+      pbMessage(_INTL("A mythical psychic emerged."))
       pbWait(5)
       pbWildBattle(:MEW,70)
     end
@@ -100,7 +99,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:RAIKOU))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("An electrical dog emerged."))
+      pbMessage(_INTL("An electrical dog emerged."))
       pbWait(5)
       pbWildBattle(:RAIKOU,70)
     end
@@ -109,7 +108,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:ENTEI))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A fiery dog emerged."))
+      pbMessage(_INTL("A fiery dog emerged."))
       pbWait(5)
       pbWildBattle(:ENTEI,70)
     end
@@ -118,7 +117,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:SUICUNE))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A watery dog emerged."))
+      pbMessage(_INTL("A watery dog emerged."))
       pbWait(5)
       pbWildBattle(:SUICUNE,70)
     end
@@ -127,7 +126,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:HOOH))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A rainbow legendary emerged."))
+      pbMessage(_INTL("A rainbow legendary emerged."))
       pbWait(5)
       pbWildBattle(:HOOH,70)
     end
@@ -136,7 +135,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:LUGIA))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A tidal legendary emerged."))
+      pbMessage(_INTL("A tidal legendary emerged."))
       pbWait(5)
       pbWildBattle(:LUGIA,70)
     end
@@ -145,7 +144,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:CELEBI))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A time traveler emerged."))
+      pbMessage(_INTL("A time traveler emerged."))
       pbWait(5)
       pbWildBattle(:CELEBI,70)
     end
@@ -154,7 +153,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:REGIROCK))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A rocky titan emerged."))
+      pbMessage(_INTL("A rocky titan emerged."))
       pbWait(5)
       pbWildBattle(:REGIROCK,70)
     end
@@ -163,7 +162,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:REGICE))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("An icy titan emerged."))
+      pbMessage(_INTL("An icy titan emerged."))
       pbWait(5)
       pbWildBattle(:REGICE,70)
     end
@@ -172,7 +171,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:REGISTEEL))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A metallic titan emerged."))
+      pbMessage(_INTL("A metallic titan emerged."))
       pbWait(5)
       pbWildBattle(:REGISTEEL,70)
     end
@@ -181,7 +180,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:LATIOS))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A blue eonic jet emerged."))
+      pbMessage(_INTL("A blue eonic jet emerged."))
       pbWait(5)
       pbWildBattle(:LATIOS,70)
     end
@@ -190,7 +189,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:LATIAS))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A red eonic jet emerged."))
+      pbMessage(_INTL("A red eonic jet emerged."))
       pbWait(5)
       pbWildBattle(:LATIAS,70)
     end
@@ -199,7 +198,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:KYOGRE))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("An oceanic legendary emerged."))
+      pbMessage(_INTL("An oceanic legendary emerged."))
       pbWait(5)
       pbWildBattle(:KYOGRE,70)
     end
@@ -208,7 +207,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:GROUDON))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A volcanic legendary emerged."))
+      pbMessage(_INTL("A volcanic legendary emerged."))
       pbWait(5)
       pbWildBattle(:GROUDON,70)
     end
@@ -217,7 +216,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:RAYQUAZA))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A sky dragon emerged."))
+      pbMessage(_INTL("A sky dragon emerged."))
       pbWait(5)
       pbWildBattle(:RAYQUAZA,70)
     end
@@ -226,7 +225,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:JIRACHI))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A starry wish emerged."))
+      pbMessage(_INTL("A starry wish emerged."))
       pbWait(5)
       pbWildBattle(:JIRACHI,70)
     end
@@ -235,7 +234,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:UXIE))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A lake legendary emerged."))
+      pbMessage(_INTL("A lake legendary emerged."))
       pbWait(5)
       pbWildBattle(:UXIE,70)
     end
@@ -244,7 +243,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:MESPRIT))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A lake legendary emerged."))
+      pbMessage(_INTL("A lake legendary emerged."))
       pbWait(5)
       pbWildBattle(:MESPRIT,70)
     end
@@ -253,7 +252,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:AZELF))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A lake legendary emerged."))
+      pbMessage(_INTL("A lake legendary emerged."))
       pbWait(5)
       pbWildBattle(:AZELF,70)
     end
@@ -262,7 +261,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:DIALGA))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A time legendary emerged."))
+      pbMessage(_INTL("A time deity emerged."))
       pbWait(5)
       pbWildBattle(:DIALGA,70)
     end
@@ -271,7 +270,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:PALKIA))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A space legendary emerged."))
+      pbMessage(_INTL("A space deity emerged."))
       pbWait(5)
       pbWildBattle(:PALKIA,70)
     end
@@ -280,7 +279,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:GIRATINA))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A distortion emerged."))
+      pbMessage(_INTL("A distortion emerged."))
       pbWait(5)
       pbWildBattle(:GIRATINA,70)
     end
@@ -289,7 +288,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:CRESSELIA))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A dream emerged."))
+      pbMessage(_INTL("A dream emerged."))
       pbWait(5)
       pbWildBattle(:CRESSEILA,70)
     end
@@ -298,7 +297,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:DARKRAI))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A nightmare emerged."))
+      pbMessage(_INTL("A nightmare emerged."))
       pbWait(5)
       pbWildBattle(:DARKRAI,70)
     end
@@ -307,7 +306,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:HEATRAN))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A metallic volcano emerged."))
+      pbMessage(_INTL("A metallic volcano emerged."))
       pbWait(5)
       pbWildBattle(:HEATRAN,70)
     end
@@ -316,7 +315,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:SHAYMIN))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A flower emerged."))
+      pbMessage(_INTL("A flower emerged."))
       pbWait(5)
       pbWildBattle(:SHAYMIN,70)
     end
@@ -325,7 +324,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:REGIGIGAS))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A titan emerged."))
+      pbMessage(_INTL("A titan emerged."))
       pbWait(5)
       pbWildBattle(:REGIGIGAS,70)
     end
@@ -334,7 +333,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:MANAPHY))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A starry wish emerged."))
+      pbMessage(_INTL("A starry wish emerged."))
       pbWait(5)
       pbWildBattle(:MANAPHY,70)
     end
@@ -343,7 +342,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:PHIONE))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A starry wish emerged."))
+      pbMessage(_INTL("A starry wish emerged."))
       pbWait(5)
       pbWildBattle(:PHIONE,70)
     end
@@ -352,7 +351,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:ARCEUS))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A god emerged."))
+      pbMessage(_INTL("A god emerged."))
       pbWait(5)
       pbWildBattle(:ARCEUS,70)
     end
@@ -361,7 +360,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:VICTINI))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A victory wish emerged."))
+      pbMessage(_INTL("A victory wish emerged."))
       pbWait(5)
       pbWildBattle(:VICTINI,70)
     end
@@ -370,7 +369,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:COBALION))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A justice sword emerged."))
+      pbMessage(_INTL("A justice sword emerged."))
       pbWait(5)
       pbWildBattle(:COBALION,70)
     end
@@ -379,7 +378,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:TERAKION))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A justice sword emerged."))
+      pbMessage(_INTL("A justice sword emerged."))
       pbWait(5)
       pbWildBattle(:TERAKION,70)
     end
@@ -388,7 +387,7 @@ def wormholeEncounter
     if ($Trainer.hasOwned?(:VIRIZION))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A justice sword emerged."))
+      pbMessage(_INTL("A justice sword emerged."))
       pbWait(5)
       pbWildBattle(:VIRIZION,70)
     end
@@ -408,7 +407,7 @@ end
     if ($Trainer.hasOwned?(:NAME))
       wormholeEncounter
     else
-      Kernel.pbMessage(_INTL("A xxx emerged."))
+      pbMessage(_INTL("A xxx emerged."))
       pbWait(5)
       pbWildBattle(:NAME,70)
     end
